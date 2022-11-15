@@ -56,6 +56,7 @@ class consumer extends Thread{
 }
 public class InterProcess {
 
+	// Main method where the starting point of exec
 	public static void main(String[] args) {
 		Data d = new Data();
 		producer p = new producer(d);
