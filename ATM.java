@@ -10,6 +10,7 @@ synchronized public void checkBalance(String name) {
 	}catch(Exception e)
 	{}
 }
+
 synchronized public void withdraw(String name,int amount) {
 	System.out.println(name + " wants to withdraw a amount of "+ amount+ "dollars");
 	try {
@@ -33,6 +34,7 @@ synchronized public void withdraw(String name,int amount) {
 	
 	//obj.checkBalance(name);
 	//obj.withdraw(name,amount);
+
 	customer c = new customer(obj,name,amount); 
 	customer c2 = new customer(obj,name2,amount2); 
 	c.start();
